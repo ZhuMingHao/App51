@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="App51.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Ad="using:Microsoft.Advertising.WinRT.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:App51"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d"
+    >
+    <Page.Resources>
+        <SolidColorBrush x:Key="enabled" Color="Green" />
+        <SolidColorBrush x:Key="disable" Color="Red" />
+    </Page.Resources>
+    <StackPanel Orientation="Vertical">
+        <RichEditBox x:Name="richEbitBox" />
+        <ComboBox x:Name="fontBox" />
+        <ComboBox x:Name="fontSizeBox" />
+        <TextBlock x:Name="charactersCount" />
+        <TextBox x:Name="FormatBoltText" />
+        <TextBox x:Name="formatItalicText" />
+        <TextBox x:Name="formatUnderlineText" />
+        <Button
+            x:Name="Action"
+            Click="Actions_Click"
+            Content="Start"
+            Tag="0"
+            />
+    </StackPanel>
+</Page>
